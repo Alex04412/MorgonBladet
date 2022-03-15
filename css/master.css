@@ -1,14 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
   height: 100vh;
 }
 
 
 header{
-  width: 100%;
+  width: 98.6vw;
   height: 100px;
   background-color: green;
   grid-area: he;
   display: flex;
+}
+main{
+  width: 98.6vw;
+  height: 100vh;
+  grid-area: ma;
+
+
+}
+
+.article_main{
+height: 75vh;
+width: 98.6vw;
+background-color: blue;
+margin-top: 25px;
+
+
+}
+.circle:hover{
+background-color: rgba(244, 244, 244, 0.9);
+
+}
+
+
+
+.circle{
+  border-radius: 50px;
+  position: relative;
+  width: 4vw;
+  height:8vh;
+
+  display: inline-block;
+}
+.left{
+  top: 33.5vh;
+  left: -4.3vw;
+}
+
+.right{
+  top: 33.5vh;
+  left: 86vw;
 }
 #artiklar{
   width: 100px;
@@ -29,8 +73,11 @@ header{
 #wrapper{
   height: 100%;
   display: grid;
-  grid-template: columns: 20% 20% 20% 20% 20%;
-  grid-template: rows: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20%;
   grid-template-areas:
-    "he he he he he";
+    "he he he he he"
+    "ma ma ma ma ma";
+
+
 }
