@@ -1,36 +1,160 @@
-.body{
-  height: 100vh;
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 
-.header{
+
+body{
+  height:300vh;
+}
+
+
+header{
+
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 100px;
   background-color: green;
   grid-area: he;
-  display: flex;
+
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  min-width: 0;
+  grid-template-areas:
+    "ar ny in . sö";
+}
+main{
+  width: 98.6vw;
+  height: 100vh;
+  grid-area: ma;
+
+
+}
+
+.article_main{
+height: 75vh;
+width: 98.6vw;
+background-color: blue;
+margin-top: 25px;
+
+
+}
+.circle:hover{
+background-color: rgba(244, 244, 244, 0.9);
+
+}
+
+
+
+.circle{
+  border-radius: 50px;
+  position: relative;
+  width: 4vw;
+  height:8vh;
+
+  display: inline-block;
+}
+.left{
+  top: 33.5vh;
+  left: -4.3vw;
+}
+
+.right{
+  top: 33.5vh;
+  left: 86vw;
 }
 #artiklar{
-  width: 100px;
-  height: 75px;
+  max-width: 100%;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
   background-color: blue;
+  grid-area: ar;
 }
 #nyheter{
-  width: 100px;
-  height: 75px;
+  max-width: 100%;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
   background-color: red;
+  grid-area: ny;
 }
 #info{
-  width: 100px;
-  height: 75px;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
   background-color: yellow;
+  grid-area: in;
+}
+#sök{
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: violet;
+  grid-area: sö;
 }
 
 #wrapper{
+  justify-content: center;
   height: 100%;
   display: grid;
-  grid-template: columns: 20% 20% 20% 20% 20%;
-  grid-template: rows: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20%;
   grid-template-areas:
-    "he he he he he";
+    "he he he he he"
+    "ma ma ma ma ma";
+
+
+
 }
