@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -48,12 +49,14 @@ table {
 }
 
 
+
 body{
   height:300vh;
 }
 
 
 header{
+
   position: sticky;
   top: 0;
   width: 100%;
@@ -66,6 +69,46 @@ header{
   min-width: 0;
   grid-template-areas:
     "ar ny in . sö";
+}
+main{
+  width: 98.6vw;
+  height: 100vh;
+  grid-area: ma;
+
+
+}
+
+.article_main{
+height: 75vh;
+width: 98.6vw;
+background-color: blue;
+margin-top: 25px;
+
+
+}
+.circle:hover{
+background-color: rgba(244, 244, 244, 0.9);
+
+}
+
+
+
+.circle{
+  border-radius: 50px;
+  position: relative;
+  width: 4vw;
+  height:8vh;
+
+  display: inline-block;
+}
+.left{
+  top: 33.5vh;
+  left: -4.3vw;
+}
+
+.right{
+  top: 33.5vh;
+  left: 86vw;
 }
 #artiklar{
   max-width: 100%;
@@ -108,5 +151,8 @@ header{
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20%;
   grid-template-areas:
-    "he he he he he";
+    "he he he he he"
+    "ma ma ma ma ma";
+
+
 }
