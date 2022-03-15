@@ -1,37 +1,50 @@
 body{
-  height: 100vh;
+  height:100vh;
 }
 
 
 header{
-  width: 100%;
+  width: 100vw;
   height: 100px;
   background-color: green;
   grid-area: he;
   display: grid;
+  grid-template: columns: 20% 20% 20% 20% 20%;
+  grid-template: rows: 100%;
+  grid-template-areas:
+    "ar ny in . sö";
 }
 #artiklar{
-  width: 100px;
-  height: 75px;
+  max-width: 100%;
+  width: 100%;
+  height: 100px;
   background-color: blue;
+  grid-area: ar;
 }
 #nyheter{
-  width: 100px;
-  height: 75px;
+  max-width: 100%;
+  width: 100%;
+  height: 100px;
   background-color: red;
+  grid-area: ny;
 }
 #info{
-  width: 100px;
-  height: 75px;
+  max-width: 100%;
+  width: 100%;
+  height: 100px;
   background-color: yellow;
+  grid-area: in;
 }
 #sök{
-  width: 100px;
-  height: 75px;
+  max-width: 100%;
+  width: 100%;
+  height: 100px;
   background-color: violet;
+  grid-area: sö;
 }
 
 #wrapper{
+  justify-content: center;
   height: 100%;
   display: grid;
   grid-template: columns: 20% 20% 20% 20% 20%;
