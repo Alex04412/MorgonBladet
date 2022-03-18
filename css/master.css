@@ -69,7 +69,7 @@ header{
   grid-template-rows: 50%;
   min-width: 0;
   grid-template-areas:
-		".	.	.	.	."
+		"to	tp tp tp sw"
     "ar ny in . sö";
 }
 main{
@@ -111,6 +111,22 @@ background-color: rgba(244, 244, 244, 0.9);
 .right{
   top: 33.5vh;
   left: 86vw;
+}
+#topimg{
+	background-color: green;
+	grid-area: to;
+}
+#top{
+	background-color: white;
+	grid-area: tp;
+}
+#loga{
+	max-width: 100%;
+  height: auto;
+}
+#switch{
+	background-color: white;
+	grid-area: sw;
 }
 #artiklar{
   max-width: 100%;
