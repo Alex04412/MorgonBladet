@@ -1,11 +1,11 @@
-.body{
+body{
 
 height:100vh;
 
 }
 
 
-.header{
+header{
 
   position: sticky;
   top: 0;
@@ -20,7 +20,7 @@ height:100vh;
   min-width: 0;
   grid-template-areas:
     "ar ny in . sö";
-    
+
 }
 
 #NEWS{
