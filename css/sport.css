@@ -1,7 +1,34 @@
+.body{
+
+height:100vh;
+
+}
+
+
 .header{
 
-  background-color: red;
-    text-align: center;
-    
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: green;
+  grid-area: he;
 
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  min-width: 0;
+  grid-template-areas:
+    "ar ny in . sö";
+    
+}
+
+#NEWS{
+  max-width: 100%;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  grid-area: ar;
 }
