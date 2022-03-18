@@ -12,12 +12,19 @@ header{
   width: 100%;
   height: 100px;
   background-color: green;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  min-width: 0;
+  grid-template-areas:
+    "n1,n2,n3";
 }
 
 #NEWS1{
   width: 100%;
   height: 100%;
   background-color: blue;
+
 }
 
 #NEWS2{
@@ -30,4 +37,22 @@ header{
   width: 100%;
   height: 100%;
   background-color: yellow;
+}
+
+
+
+
+
+#wrapper{
+  justify-content: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20%;
+  grid-template-areas:
+    "he he he he he"
+    "ma ma ma ma ma";
+
+
+
 }
