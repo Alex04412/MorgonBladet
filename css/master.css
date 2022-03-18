@@ -66,9 +66,10 @@ header{
 
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 100%;
+  grid-template-rows: 50%;
   min-width: 0;
   grid-template-areas:
+		".	.	.	.	."
     "ar ny in . sö";
 }
 main{
@@ -117,7 +118,7 @@ background-color: rgba(244, 244, 244, 0.9);
 
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: green;
   grid-area: ar;
 }
 #nyheter{
@@ -126,7 +127,7 @@ background-color: rgba(244, 244, 244, 0.9);
 
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: green;
   grid-area: ny;
 }
 #info{
@@ -134,14 +135,14 @@ background-color: rgba(244, 244, 244, 0.9);
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background-color: yellow;
+  background-color: green;
   grid-area: in;
 }
 #sök{
   max-width: 100%;
   width: 100%;
   height: 100%;
-  background-color: violet;
+  background-color: green;
   grid-area: sö;
 }
 
