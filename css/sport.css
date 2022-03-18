@@ -1,6 +1,6 @@
 body{
 
-height:100vh;
+height:300vh;
 
 }
 
@@ -19,6 +19,16 @@ header{
   grid-template-areas:
     "n1,n2,n3";
 }
+
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
 
 #NEWS1{
   width: 100%;
