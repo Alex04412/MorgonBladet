@@ -22,12 +22,6 @@ header{
 
 
 
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
 
 
 #NEWS1{
@@ -54,6 +48,14 @@ footer {
 
 
 
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
 
 
 #wrapper{
