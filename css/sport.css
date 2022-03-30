@@ -97,6 +97,19 @@ header{
   grid-area: n3;
 }
 
+main{
+  width: 98.6vw;
+  height: 100vh;
+  grid-area: ma;
+}
+
+.article_main{
+height: 75vh;
+width: 98.6vw;
+background-color: blue;
+margin-top: 25px;
+
+
 
 
 
