@@ -115,7 +115,8 @@ margin-top: 25px;
 
 
 .footer {
-   padding-bottom:100vh;
+   height: 30vh;
+   padding-bottom:-100vh;
    background-color: blue;
    position: absolute;
 
