@@ -97,7 +97,7 @@ header{
   grid-area: n3;
 }
 
-main{
+.main{
   width: 98.6vw;
   height: 100vh;
   grid-area: ma;
@@ -108,12 +108,8 @@ height: 50vh;
 width: 98.6vw;
 background-color: gray;
 margin-top: 25px;
-margin-bottom: 10vh;
 text-align: center;
 }
-
-
-
 
 
 .footer {
