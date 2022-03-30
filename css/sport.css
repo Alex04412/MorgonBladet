@@ -104,9 +104,9 @@ main{
 }
 
 .article_main{
-height: 75vh;
+height: 50vh;
 width: 98.6vw;
-background-color: blue;
+background-color: gray;
 margin-top: 25px;
 }
 
