@@ -97,7 +97,7 @@ header{
   grid-area: n3;
 }
 
-.main{
+main{
   width: 98.6vw;
   height: 100vh;
   grid-area: ma;
