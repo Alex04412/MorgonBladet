@@ -1,1 +1,17 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+var switch1 = $("#switch");
+var dark = true;
+var artiklar = $("#artiklar");
+
+
+
+switch.on("click".function() {
+
+console.log("test");
+  if (dark==true) {
+    dark==false;
+  }
+
+});
