@@ -108,6 +108,7 @@ height: 50vh;
 width: 98.6vw;
 background-color: gray;
 margin-top: 25px;
+margin-bottom: 10vh;
 text-align: center;
 }
 
@@ -117,7 +118,8 @@ text-align: center;
 
 .footer {
   position: fixed;
-  
+  left: 0;
+  bottom: 0;
   height: 10vh;
   width: 100%;
   background-color: red;
