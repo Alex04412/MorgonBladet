@@ -138,6 +138,7 @@ background-color: rgba(244, 244, 244, 0.9);
   background-color: green;
   grid-area: ar;
 }
+
 #nyheter{
   max-width: 100%;
   overflow: hidden;
@@ -162,7 +163,18 @@ background-color: rgba(244, 244, 244, 0.9);
   background-color: green;
   grid-area: sö;
 }
-
+#artiklar:hover{
+	background-color: #1dde84;
+}
+#nyheter:hover{
+	background-color: #1dde84;
+}
+#info:hover{
+	background-color: #1dde84;
+}
+#sök:hover{
+	background-color: #1dde84;
+}
 #wrapper{
   justify-content: center;
   height: 100%;
