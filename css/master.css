@@ -113,7 +113,7 @@ background-color: rgba(244, 244, 244, 0.9);
   left: 86vw;
 }
 #topimg{
-	background-color: green;
+	background-color: white;
 	grid-area: to;
 }
 #top{
@@ -122,7 +122,8 @@ background-color: rgba(244, 244, 244, 0.9);
 }
 #loga{
 	max-width: 100%;
-  height: auto;
+	max-height: 100%;
+	display: block;
 }
 #switch{
 	background-color: white;
