@@ -15,8 +15,8 @@ switch1.click(function(){
     dark=true;
       console.log("dark on");
       class1.css("background-color", "#3d3d3d");
-      //artiklar.css("background-color", "#3d3d3d");
-      //info1.css("background-color", "#3d3d3d");
+      artiklar.css("background-color", "#3d3d3d");
+      info1.css("background-color", "#3d3d3d");
   }
   else {
     dark=false;
