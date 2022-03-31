@@ -163,6 +163,9 @@ background-color: rgba(244, 244, 244, 0.9);
   background-color: green;
   grid-area: sö;
 }
+.switchDark{
+	background-color: black;
+}
 #artiklar:hover{
 	background-color: #1dde84;
 }
