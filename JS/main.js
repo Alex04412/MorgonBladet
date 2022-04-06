@@ -14,7 +14,7 @@ var lightrad = $("#Light");
 var darkrad = $("#Dark");
 
 
-
+lightrad.prop("checked", true);
 switch1.click(function(){
   if (dark==false) {
     dark=true;
@@ -30,6 +30,8 @@ switch1.click(function(){
 
 
       head1.css("color", "#ffffff");
+
+      darkrad.prop("checked", true);
   }
   else {
     dark=false;
@@ -44,6 +46,7 @@ switch1.click(function(){
     topimg.css("background-color", "white");
 
     head1.css("color", "black");
+    lightrad.prop("checked", true);
   }
 
 });
