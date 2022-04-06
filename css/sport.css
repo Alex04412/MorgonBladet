@@ -1,36 +1,139 @@
-.body{
-  height: 100vh;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 
-.header{
+
+
+
+
+
+body{
+
+height:100vh;
+
+}
+
+
+header{
+
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 100px;
   background-color: green;
-  grid-area: he;
-  display: flex;
-}
-#artiklar{
-  width: 100px;
-  height: 75px;
-  background-color: blue;
-}
-#nyheter{
-  width: 100px;
-  height: 75px;
-  background-color: red;
-}
-#info{
-  width: 100px;
-  height: 75px;
-  background-color: yellow;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  min-width: 0;
+  grid-template-areas:
+    "n1,n2,n3";
 }
 
+
+
+
+
+#NEWS1{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  grid-area: n1;
+
+}
+
+#NEWS2{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  grid-area: n2;
+}
+
+#NEWS3{
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  grid-area: n3;
+}
+
+main{
+  width: 98.6vw;
+  height: 100vh;
+  grid-area: ma;
+}
+
+.article_main{
+height: 50vh;
+width: 98.6vw;
+background-color: gray;
+margin-top: 25px;
+text-align: center;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: red;
+  text-align: center;
+
+   }
+
+
 #wrapper{
+  justify-content: center;
   height: 100%;
   display: grid;
-  grid-template: columns: 20% 20% 20% 20% 20%;
-  grid-template: rows: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20%;
   grid-template-areas:
-    "he he he he he";
+    "he he he he he"
+    "ma ma ma ma ma";
+
+
+
 }
