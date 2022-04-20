@@ -36,12 +36,12 @@ switch1.click(function(){
   else {
     dark=false;
     console.log("dark off");
-    head1.css("background-color", "green");
-    artiklar.css("background-color", "green");
-    info1.css("background-color", "green");
-    sök.css("background-color", "green");
+    head1.css("background-color", "#90EE90");
+    artiklar.css("background-color", "#90EE90");
+    info1.css("background-color", "#90EE90");
+    sök.css("background-color", "#90EE90");
     switch1.css("background-color", "white");
-    nyheter.css("background-color", "green");
+    nyheter.css("background-color", "#90EE90");
     top1.css("background-color", "white");
     topimg.css("background-color", "white");
 
