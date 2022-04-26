@@ -1,6 +1,7 @@
 
 
-
+var swSlider = $("#switchSlider");
+var clickS = $("#click");
 var switch1 = $("#switch");
 var dark = false;
 var top1 = $("#top");
@@ -10,12 +11,9 @@ var sök = $("#sök");
 var nyheter = $("#nyheter");
 var head1 = $("header");
 var topimg =$("#topimg");
-var lightrad = $("#Light");
-var darkrad = $("#Dark");
 
 
-lightrad.prop("checked", true);
-switch1.click(function(){
+swSlider.click(function(){
   if (dark==false) {
     dark=true;
       console.log("dark on");
@@ -27,11 +25,16 @@ switch1.click(function(){
       nyheter.css("background-color", "#3d3d3d");
       top1.css("background-color", "#3d3d3d");
       topimg.css("background-color", "#3d3d3d");
-
+      swSlider.css("background-color", "#90EE90");
 
       head1.css("color", "#ffffff");
 
-      darkrad.prop("checked", true);
+      clickS.animate({
+        right: "-=40",
+
+      }, 250, function(){
+
+      });
   }
   else {
     dark=false;
@@ -44,9 +47,14 @@ switch1.click(function(){
     nyheter.css("background-color", "#90EE90");
     top1.css("background-color", "white");
     topimg.css("background-color", "white");
+    swSlider.css("background-color", "#3d3d3d");
 
     head1.css("color", "black");
-    lightrad.prop("checked", true);
-  }
 
+    clickS.animate({
+      right: "+=40",
+    }, 250, function(){
+
+    });
+  }
 });

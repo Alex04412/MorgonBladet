@@ -224,21 +224,20 @@ top: 60%;
 	background-color: #1dde84;
 }
 #switchSlider{
-	width: 25%;
-	height: 50%;
-	background-color: blue;
+	position: relative;
+	width: 68px;
+	height: 25px;
+	background-color: #3d3d3d;
 	border-radius: 20%;
-	display: flex;
-	align-items: center;
-
+	top: 10px;
 }
 #click{
+	position: relative;
+	top: 5px;
+	right: -5px;
 	width: 15px;
 	height: 15px;
 	border-radius: 100%;
-	background-color: red;
-}
-#switchSlider:hover{
 	background-color: red;
 }
 #wrapper{
