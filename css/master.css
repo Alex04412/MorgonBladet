@@ -438,7 +438,7 @@ height: 100%;
 main{
   height: 100%;
   display: grid;
-  grid-template-columns: 5% 30% 30% 30% 5%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 50%;
   grid-template-areas:
     "ad1 ar ar ar ad2 ";
@@ -532,4 +532,8 @@ grid-area: wi;
 	height: 50px;
 	border-radius: 50%;
 	padding-bottom: 40px;
+}
+.cool{
+
+
 }
