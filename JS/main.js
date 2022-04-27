@@ -29,12 +29,12 @@ swSlider.click(function(){
       nyheter.css("background-color", "#3d3d3d");
       top1.css("background-color", "#3d3d3d");
       topimg.css("background-color", "#3d3d3d");
-      swSlider.css("background-color", "#90EE90");
+      swSlider.css("background-color", "#0F0E0E");
 
       head1.css("color", "#ffffff");
 
       clickS.animate({
-        right: "-=40",
+        right: "-=45",
 
       }, 250, function(){
 
@@ -56,7 +56,7 @@ swSlider.click(function(){
     head1.css("color", "black");
 
     clickS.animate({
-      right: "+=40",
+      right: "+=45",
     }, 250, function(){
 
     });
