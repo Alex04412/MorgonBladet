@@ -1,5 +1,7 @@
 
 
+var button3 = $(".button-3")
+var check1 = 0
 
 var switch1 = $("#switch");
 var dark = false;
@@ -45,5 +47,34 @@ switch1.click(function(){
 
     head1.css("color", "black");
   }
+
+});
+
+button3.click(function(){
+  var the_element=$(event.target)
+  the_element_parent=the_element.parent().parent().parent().parent().parent()
+  the_element_artikel=the_element.parent().parent()
+  if(check1 %2 == 0){
+    the_element.html("Läs mindre")
+
+
+    the_element_parent.addClass("aktive")
+    the_element_artikel.addClass("aktivated")
+  }else {
+    the_element_parent.removeClass("aktive")
+    the_element_artikel.removeClass("aktivated")
+    the_element.html("Läs mer")
+
+  }
+
+  check1++;
+
+});
+var section = $(".section");
+var comment = $(".comment");
+comment.click(function functionName() {
+  the_commment=comment.parent().children(".input").val()
+section.html('<img class="profil" src="Bilder/Mormor.jpeg"><h4>Agdha 48:</h4><p>'+the_commment+'</p>')
+
 
 });
